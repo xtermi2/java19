@@ -12,7 +12,7 @@
     - see example `RecordPatternMatching.java`
     - Enhance the Java programming language with record patterns to deconstruct record values.
 - [JEP 422: Linux/RISC-V Port](https://openjdk.org/jeps/422)
-    - TODO
+    - Port of the JDK to Linux/RISC-V Architecture.
 - [JEP 424:	Foreign Function & Memory API (Preview)](https://openjdk.java.net/jeps/424)
     - TODO
 - [JEP 425:	Virtual Threads (Preview)](https://openjdk.java.net/jeps/425)
