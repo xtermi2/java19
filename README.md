@@ -9,12 +9,15 @@
 # Java 19 Features
 
 - [JEP 405: Record Patterns (Preview)](https://openjdk.org/jeps/405)
-    - see example `RecordPatternMatching.java`
     - Enhance the Java programming language with record patterns to deconstruct record values.
+    - see example `RecordPatternMatching.java`
 - [JEP 422: Linux/RISC-V Port](https://openjdk.org/jeps/422)
     - Port of the JDK to Linux/RISC-V Architecture.
 - [JEP 424:	Foreign Function & Memory API (Preview)](https://openjdk.java.net/jeps/424)
-    - TODO
+    - Introduce an API by which Java programs can interoperate with code and data outside of the Java runtime. Combination of 2 APIs introduced in previous JDKs:
+    - Foreign-Memory Access API (incubator in 14, 15 and 16)
+    - Foreign Linker API (incubator in 16)
+    - see example `ForeignFunctionAndMemoryAPI.java`
 - [JEP 425:	Virtual Threads (Preview)](https://openjdk.java.net/jeps/425)
     - TODO
 - [JEP 426:	Vector API (Fourth Incubator)](https://openjdk.java.net/jeps/426)

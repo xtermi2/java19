@@ -53,8 +53,6 @@
                         <arg>--add-modules</arg>
                         <arg>jdk.incubator.vector</arg>
                     </compilerArgs>
-                    <source>19</source>
-                    <target>19</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -85,7 +83,6 @@
                     <release>${java.version}</release>
                     <source>${java.version}</source>
                     <additionalOptions>--enable-preview --add-modules jdk.incubator.vector</additionalOptions>
-                    <excludePackageNames>com.github.xtermi2.java19.jep419foreignfunctionsmemory</excludePackageNames>
                 </configuration>
             </plugin>
         </plugins>
