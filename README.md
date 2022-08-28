@@ -9,7 +9,8 @@
 # Java 19 Features
 
 - [JEP 405: Record Patterns (Preview)](https://openjdk.org/jeps/405)
-    - TODO
+    - see example `RecordPatternMatching.java`
+    - Enhance the Java programming language with record patterns to deconstruct record values.
 - [JEP 422: Linux/RISC-V Port](https://openjdk.org/jeps/422)
     - TODO
 - [JEP 424:	Foreign Function & Memory API (Preview)](https://openjdk.java.net/jeps/424)
@@ -19,9 +20,9 @@
 - [JEP 426:	Vector API (Fourth Incubator)](https://openjdk.java.net/jeps/426)
     - see example `Scalar.java`
     - update to third incubator:
-      - Enhance the API to load and store vectors to and from MemorySegments as defined by JEP 424: Foreign Function & Memory (FFM) API (Preview)
+      - Enhance the API to load and store vectors to and from MemorySegments as defined by JEP 424: Foreign Function & Memory (FFM) API (Preview).
       - Add two new cross-lane vector operations, compress and its inverse expand, together with a complementary vector mask compress operation.
-      - Expand the supported set of bitwise integral lanewise operations
+      - Expand the supported set of bitwise integral lanewise operations.
 - [JEP 427:	Pattern Matching for switch (Third Preview)](https://openjdk.java.net/jeps/427)
     - see example `SwitchPatternMatching.java`
     - The enhancements since the second preview are:
