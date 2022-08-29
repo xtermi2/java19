@@ -19,7 +19,8 @@
     - Foreign Linker API (incubator in 16)
     - see example `ForeignFunctionAndMemoryAPI.java`
 - [JEP 425:	Virtual Threads (Preview)](https://openjdk.java.net/jeps/425)
-    - TODO
+    - Virtual threads are lightweight threads that dramatically reduce the effort of writing, maintaining, and observing high-throughput concurrent applications.
+    - see example ``
 - [JEP 426:	Vector API (Fourth Incubator)](https://openjdk.java.net/jeps/426)
     - see example `Scalar.java`
     - update to third incubator:
