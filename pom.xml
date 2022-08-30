@@ -18,7 +18,6 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
 
         <assertj.version>3.23.1</assertj.version>
         <junit.jupiter.version>5.9.0</junit.jupiter.version>
@@ -51,7 +50,7 @@
                     <compilerArgs>
                         <arg>--enable-preview</arg>
                         <arg>--add-modules</arg>
-                        <arg>jdk.incubator.vector</arg>
+                        <arg>jdk.incubator.vector,jdk.incubator.concurrent</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
@@ -60,7 +59,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-                    <argLine>--enable-preview --enable-native-access=ALL-UNNAMED -Dforeign.restricted=permit --add-modules jdk.incubator.vector</argLine>
+                    <argLine>--enable-preview --enable-native-access=ALL-UNNAMED -Dforeign.restricted=permit --add-modules jdk.incubator.vector,jdk.incubator.concurrent</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -73,16 +72,6 @@
                             <Automatic-Module-Name>com.github.xtermi2.java19</Automatic-Module-Name>
                         </manifestEntries>
                     </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven-javadoc-plugin.version}</version>
-                <configuration>
-                    <release>${java.version}</release>
-                    <source>${java.version}</source>
-                    <additionalOptions>--enable-preview --add-modules jdk.incubator.vector</additionalOptions>
                 </configuration>
             </plugin>
         </plugins>

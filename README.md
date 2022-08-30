@@ -27,13 +27,17 @@
       - Enhance the API to load and store vectors to and from MemorySegments as defined by JEP 424: Foreign Function & Memory (FFM) API (Preview).
       - Add two new cross-lane vector operations, compress and its inverse expand, together with a complementary vector mask compress operation.
       - Expand the supported set of bitwise integral lanewise operations.
-- [JEP 427:	Pattern Matching for switch (Third Preview)](https://openjdk.java.net/jeps/427)
+- [JEP 427:    Pattern Matching for switch (Third Preview)](https://openjdk.java.net/jeps/427)
     - see example `SwitchPatternMatching.java`
     - The main changes since the second preview are:
-      - Guarded patterns are replaced with `when` clauses in switch blocks. 
-      - The runtime semantics of a pattern switch when the value of the selector expression is null are more closely aligned with legacy switch semantics.
-- [JEP 428:	Structured Concurrency (Incubator)](https://openjdk.java.net/jeps/428)
-    - TODO
+        - Guarded patterns are replaced with `when` clauses in switch blocks.
+        - The runtime semantics of a pattern switch when the value of the selector expression is null are more closely
+          aligned with legacy switch semantics.
+- [JEP 428:    Structured Concurrency (Incubator)](https://openjdk.java.net/jeps/428)
+    - Simplify multithreaded programming by introducing an API for structured concurrency. Structured concurrency treats
+      multiple tasks running in different threads as a single unit of work, thereby streamlining error handling and
+      cancellation, improving reliability, and enhancing observability.
+    - see example `StructuredConcurrency.java`
 
 ##### Other References
 
