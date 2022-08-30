@@ -29,8 +29,9 @@
       - Expand the supported set of bitwise integral lanewise operations.
 - [JEP 427:	Pattern Matching for switch (Third Preview)](https://openjdk.java.net/jeps/427)
     - see example `SwitchPatternMatching.java`
-    - The enhancements since the second preview are:
-      - TODO
+    - The main changes since the second preview are:
+      - Guarded patterns are replaced with `when` clauses in switch blocks. 
+      - The runtime semantics of a pattern switch when the value of the selector expression is null are more closely aligned with legacy switch semantics.
 - [JEP 428:	Structured Concurrency (Incubator)](https://openjdk.java.net/jeps/428)
     - TODO
 
